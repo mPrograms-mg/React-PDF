@@ -3,7 +3,8 @@ import { Page, Document, StyleSheet, Image } from "@react-pdf/renderer";
 import logo from "../../assets/SVM-Developers-Logo.png";
 import Footer from "./Footer";
 import Header from "./Header";
-import Title from "./Title";
+import BookingTitle from "./BookingTitle";
+import BookingDate from "./BookingDate";
 
 export const Booking = () => {
   const styles = StyleSheet.create({
@@ -32,6 +33,8 @@ export const Booking = () => {
       <Page size="A4" style={styles.page}>
         <Header />
         <Image style={styles.logo} src={logo} />
+        <BookingTitle />
+        <BookingDate date={"01/01/2024"} />
         <Footer />
       </Page>
     </Document>
