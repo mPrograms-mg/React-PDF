@@ -3,6 +3,7 @@ import React from "react";
 import "./App.css";
 import PdfDocument from "./components/GenerateInvoice/Invoice";
 import { PDFDownloadLink, PDFViewer } from "@react-pdf/renderer";
+import { Booking } from "./components/BookingForm/Booking";
 
 const App = () => {
   return (
@@ -15,6 +16,10 @@ const App = () => {
           {({ loading }) => (loading ? "Loading..." : "Download Invoice")}
         </PDFDownloadLink>
       </div>
+
+      {/* <PDFViewer width={800} height={700} showToolbar={true}>
+        <Booking />
+      </PDFViewer> */}
     </div>
   );
 };
