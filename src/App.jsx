@@ -8,14 +8,14 @@ import { Booking } from "./components/BookingForm/Booking";
 const App = () => {
   return (
     <div className="App">
-      {/* <PDFViewer width={800} height={600} showToolbar={true}>
+      <PDFViewer width={800} height={600} showToolbar={true}>
         <PdfDocument />
       </PDFViewer>
       <div className="download-link">
         <PDFDownloadLink document={<PdfDocument />} fileName="SVM.pdf">
           {({ loading }) => (loading ? "Loading..." : "Download Invoice")}
         </PDFDownloadLink>
-      </div> */}
+      </div>
 
       <PDFViewer width={800} height={700} showToolbar={true}>
         <Booking />
