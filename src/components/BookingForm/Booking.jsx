@@ -33,7 +33,7 @@ export const Booking = () => {
 
     header: {
       width: "100%",
-      height: "60px",
+      height: "40px",
       backgroundColor: "#F49614",
       position: "absolute",
       top: 0,
@@ -41,7 +41,7 @@ export const Booking = () => {
 
     footer: {
       width: "100%",
-      height: "60px",
+      height: "80px",
       backgroundColor: "#F49614",
       position: "absolute",
       bottom: 0,
@@ -94,7 +94,8 @@ export const Booking = () => {
     passPhotoContainer: {
       width: "100px",
       height: "120px",
-      border: "1px solid gray",
+      border: "1px solid black",
+      marginLeft: "80%",
     },
 
     date: {
@@ -103,6 +104,11 @@ export const Booking = () => {
 
     detailTitle: {
       borderBottom: "1px solid gray",
+    },
+
+    headerContainer: {
+      // marginTop: "30%",
+      maxWidth: "100%",
     },
   });
   return (
@@ -124,10 +130,8 @@ export const Booking = () => {
           <Text style={styles.title}>BOOKING FORM</Text>
         </View>
 
-        {/* <View></View> */}
-
         <View style={styles.passPhotoWrapper}>
-          <View style={{ width: "60%", display: "flex", gap: "16px" }}>
+          {/* <View style={{ width: "60%", display: "flex", gap: "16px" }}>
             <Text style={styles.detailTitle}>
               Project Name :
               <Text style={{ marginLeft: "40px" }}> Sai Resedency</Text>
@@ -182,16 +186,311 @@ export const Booking = () => {
               Customer Sign:
               <Text style={{ marginLeft: "40px" }}> Sign </Text>
             </Text>
-          </View>
+          </View> */}
           <View style={styles.passPhotoContainer}></View>
         </View>
 
         <View
           style={{
-            marginTop: 70,
-            paddingTop: 30,
-            paddingLeft: 10,
-            // paddingRight: 50,
+            paddingTop: 20,
+            paddingLeft: 20,
+            paddingRight: 20,
+            lineHeight: 1.5,
+          }}
+        >
+          <View>
+            <Text
+              style={{
+                fontSize: "12px",
+                fontWeight: "extrabold",
+              }}
+            >
+              Project Name:
+            </Text>
+            <View
+              style={{
+                borderBottom: 1,
+                borderColor: "black",
+                width: "80%",
+                position: "relative",
+                bottom: 2,
+                marginLeft: "90px",
+              }}
+            ></View>
+          </View>
+
+          <View
+            style={{
+              marginTop: "30px",
+              display: "flex",
+              flexDirection: "row",
+              alignItems: "flex-end",
+            }}
+          >
+            <Text
+              style={{
+                fontSize: "12px",
+                fontWeight: "extrabold",
+                // color: "#F49614",
+              }}
+            >
+              Name:
+            </Text>
+            <View
+              style={{
+                borderBottom: 1,
+                borderColor: "black",
+                width: "50%",
+                position: "relative",
+                bottom: 2,
+              }}
+            ></View>
+
+            <Text
+              style={{
+                fontSize: "12px",
+                fontWeight: "extrabold",
+              }}
+            >
+              Mobile:
+            </Text>
+            <View
+              style={{
+                borderBottom: 1,
+                borderColor: "black",
+                width: "30%",
+                position: "relative",
+                bottom: 2,
+              }}
+            ></View>
+          </View>
+
+          <View
+            style={{
+              marginTop: "30px",
+            }}
+          >
+            <Text
+              style={{
+                fontSize: "12px",
+                fontWeight: "extrabold",
+              }}
+            >
+              Address:
+            </Text>
+            <View
+              style={{
+                borderBottom: 1,
+                borderColor: "black",
+                width: "86%",
+                position: "relative",
+                bottom: 2,
+                marginLeft: "55px",
+              }}
+            ></View>
+          </View>
+
+          <View
+            style={{
+              marginTop: "30px",
+              display: "flex",
+              flexDirection: "row",
+              alignItems: "flex-end",
+            }}
+          >
+            <Text
+              style={{
+                fontSize: "12px",
+                fontWeight: "extrabold",
+                // color: "#F49614",
+              }}
+            >
+              Description:
+            </Text>
+            <View
+              style={{
+                borderBottom: 1,
+                borderColor: "black",
+                width: "50%",
+                position: "relative",
+                bottom: 2,
+              }}
+            ></View>
+
+            <Text
+              style={{
+                fontSize: "12px",
+                fontWeight: "extrabold",
+              }}
+            >
+              Area:
+            </Text>
+            <View
+              style={{
+                borderBottom: 1,
+                borderColor: "black",
+                width: "30%",
+                position: "relative",
+                bottom: 2,
+              }}
+            ></View>
+          </View>
+
+          <View
+            style={{
+              marginTop: "30px",
+              display: "flex",
+              flexDirection: "row",
+              alignItems: "flex-end",
+            }}
+          >
+            <Text
+              style={{
+                fontSize: "12px",
+                fontWeight: "extrabold",
+                // color: "#F49614",
+              }}
+            >
+              Hourse/Shop/Plot:
+            </Text>
+            <View
+              style={{
+                borderBottom: 1,
+                borderColor: "black",
+                width: "90%",
+                position: "relative",
+                bottom: 2,
+              }}
+            ></View>
+          </View>
+
+          <View
+            style={{
+              marginTop: "30px",
+              display: "flex",
+              flexDirection: "row",
+              alignItems: "flex-end",
+            }}
+          >
+            <Text
+              style={{
+                fontSize: "12px",
+                fontWeight: "extrabold",
+                // color: "#F49614",
+              }}
+            >
+              Total Amount:
+            </Text>
+            <View
+              style={{
+                borderBottom: 1,
+                borderColor: "black",
+                width: "90%",
+                position: "relative",
+                bottom: 2,
+              }}
+            ></View>
+          </View>
+
+          <View
+            style={{
+              marginTop: "30px",
+              display: "flex",
+              flexDirection: "row",
+              alignItems: "flex-end",
+            }}
+          >
+            <Text
+              style={{
+                fontSize: "12px",
+                fontWeight: "extrabold",
+                // color: "#F49614",
+              }}
+            >
+              Down Payment:
+            </Text>
+            <View
+              style={{
+                borderBottom: 1,
+                borderColor: "black",
+                width: "50%",
+                position: "relative",
+                bottom: 2,
+              }}
+            ></View>
+
+            <Text
+              style={{
+                fontSize: "12px",
+                fontWeight: "extrabold",
+              }}
+            >
+              EMI:
+            </Text>
+            <View
+              style={{
+                borderBottom: 1,
+                borderColor: "black",
+                width: "30%",
+                position: "relative",
+                bottom: 2,
+              }}
+            ></View>
+          </View>
+
+          <View
+            style={{
+              marginTop: "30px",
+              display: "flex",
+              flexDirection: "row",
+              alignItems: "flex-end",
+            }}
+          >
+            <Text
+              style={{
+                fontSize: "12px",
+                fontWeight: "extrabold",
+                // color: "#F49614",
+              }}
+            >
+              Owner's Sign:
+            </Text>
+            <View
+              style={{
+                borderBottom: 1,
+                borderColor: "black",
+                width: "50%",
+                position: "relative",
+                bottom: 2,
+              }}
+            ></View>
+
+            <Text
+              style={{
+                fontSize: "12px",
+                fontWeight: "extrabold",
+              }}
+            >
+              Customer:
+            </Text>
+            <View
+              style={{
+                borderBottom: 1,
+                borderColor: "black",
+                width: "30%",
+                position: "relative",
+                bottom: 2,
+              }}
+            ></View>
+          </View>
+        </View>
+
+        <View
+          style={{
+            // paddingTop: 15,
+            marginTop: 80,
+            paddingLeft: 20,
+            paddingRight: 50,
             lineHeight: 1.5,
           }}
         >
@@ -201,57 +500,7 @@ export const Booking = () => {
           <Text>SVM Builders & Developers.</Text>
           <Text>https://www.youtube.com/channel/UCQI3M_8lurU33UPVx0p8_7g</Text>
         </View>
-
-        {/* <Header />
-        <View style={styles.headingWrapper}>
-        </View>
-        <BookingTitle />
-        <BookingDate date={"01/01/2024"} />
-        <Footer /> */}
       </Page>
     </Document>
   );
 };
-
-// import React from "react";
-// import { Page, Document, StyleSheet, Image } from "@react-pdf/renderer";
-// import logo from "../../assets/SVM-Developers-Logo.png";
-// import Footer from "./Footer";
-// import Header from "./Header";
-// import BookingTitle from "./BookingTitle";
-// import BookingDate from "./BookingDate";
-
-// export const Booking = () => {
-//   const styles = StyleSheet.create({
-//     page: {
-//       backgroundColor: "#fff",
-//       fontFamily: "Helvetica",
-//       fontSize: 12,
-//       paddingTop: 30,
-//       paddingLeft: 50,
-//       paddingRight: 50,
-//       lineHeight: 1.5,
-//       flexDirection: "column",
-//       border: "5px solid black", // Set your desired border style
-//       boxSizing: "border-box",
-//     },
-//     logo: {
-//       width: 100,
-//       height: 100,
-//       position: "absolute",
-//       top: 50,
-//       right: 30,
-//     },
-//   });
-//   return (
-//     <Document>
-//       <Page size="A4" style={styles.page}>
-//         <Header />
-//         <Image style={styles.logo} src={logo} />
-//         <BookingTitle />
-//         <BookingDate date={"01/01/2024"} />
-//         <Footer />
-//       </Page>
-//     </Document>
-//   );
-// };
