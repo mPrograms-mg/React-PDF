@@ -1,36 +1,36 @@
-const invoiceTable = {
+const InvoiceTableData = {
     "items": [
       {
         "sno": 1,
         "date":"30/05/2024",
-        "Amount": 5,
-        "status": 405.89
+        "amount": 5,
+        "status":"completed",
       },
       {
         "sno": 2,
         "date":"30/05/2024",
-        "Amount": 5,
-        "status": 373.11
+        "amount": 5,
+        "status":"completed",
       },
       {
         "sno": 3,
         "date":"30/05/2024",
-        "Amount": 5,
-        "status": 458.61
+        "amount": 5,
+        "status":"completed",
       },
       {
         "sno": 4,
         "date":"30/05/2024",
-        "Amount": 10,
-        "status": 725.24
+        "amount": 10,
+        "status":"completed",
       },
       {
         "sno": 5,
         "date":"30/05/2024",
-        "Amount": 4,
-        "status": 141.02
+        "amount": 4,
+        "status":"completed",
       }
     ]
   }
   
-  export default invoiceTable
+  export default InvoiceTableData
