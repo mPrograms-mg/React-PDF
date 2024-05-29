@@ -39,28 +39,16 @@ const styles = StyleSheet.create({
   },
 });
 
-const InvoiceTableRow = () => {
-  return (
-    <Fragment>
-      {
-        <View style={styles.row}>
-          <Text style={styles.srno}>1</Text>
-          <Text style={styles.date}>30/2/2024</Text>
-          <Text style={styles.amount}>23</Text>
-          <Text style={styles.status}>complete</Text>
-        </View>
-      }
-    </Fragment>
-  );
-  // const rows = items.map((data) => (
-  //   <View style={styles.row} key={data.srno.toString()}>
-  //     <Text style={styles.srno}>{data.srno}</Text>
-  //     <Text style={styles.date}>{data.date}</Text>
-  //     <Text style={styles.amount}>{data.amount}</Text>
-  //     <Text style={styles.status}>{data.status}</Text>
-  //   </View>
-  // ));
-  // return <Fragment>{rows}</Fragment>;
+const InvoiceTableRow = ({ items }) => {
+  const rows = items.items.map((data) => (
+    <View style={styles.row} key={data.srno}>
+      <Text style={styles.srno}>{data.srno}</Text>
+      <Text style={styles.date}>{data.date}</Text>
+      <Text style={styles.amount}>{data.amount}</Text>
+      <Text style={styles.status}>{data.status}</Text>
+    </View>
+  ));
+  return <Fragment>{rows}</Fragment>;
 };
 
 export default InvoiceTableRow;

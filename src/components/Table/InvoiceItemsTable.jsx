@@ -18,7 +18,7 @@ const InvoiceItemsTable = () => {
   return (
     <View style={styles.tableContainer}>
       <InvoiceTableHeader />
-      <InvoiceTableRow />
+      <InvoiceTableRow items={InvoiceTableData} />
     </View>
   );
 };
