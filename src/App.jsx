@@ -8,7 +8,7 @@ import { Booking } from "./components/BookingForm/Booking";
 const App = () => {
   return (
     <div className="App">
-      <PDFViewer width={800} height={600} showToolbar={true}>
+      <PDFViewer width={800} height={680} showToolbar={true}>
         <PdfDocument />
       </PDFViewer>
       <div className="download-link">
@@ -16,10 +16,6 @@ const App = () => {
           {({ loading }) => (loading ? "Loading..." : "Download Invoice")}
         </PDFDownloadLink>
       </div>
-
-      {/* <PDFViewer width={800} height={700} showToolbar={true}>
-        <Booking />
-      </PDFViewer> */}
     </div>
   );
 };
