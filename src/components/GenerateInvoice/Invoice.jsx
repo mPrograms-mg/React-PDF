@@ -44,11 +44,11 @@ const PdfDocument = () => {
       <Page size="A4" style={styles.page}>
         <Image style={styles.logo} src={logo} />
         <InvoiceTitle title={"SVM Developer"} />
-        <InvoiceNameDate receiptNo={"3620"} date={"31/09/2023"} />
+        {/* <InvoiceNameDate receiptNo={"3620"} date={"31/09/2023"} />
         <InovieProjectDes />
         <BillTo invoice={InvoiceData} />
         <InvoiceTermCond />
-        <InvoiceFooter />
+        <InvoiceFooter /> */}
       </Page>
     </Document>
   );
